@@ -44,6 +44,8 @@
         height: 100%;
         border: none;
         pointer-events: auto;
+        transform: translateZ(0);
+        will-change: transform;
       }
 
       /* FIXED FOOTER RECTANGLE */
@@ -86,10 +88,14 @@
   </head>
   <body>
     <div class="iframe-container">
-      <iframe class="main-iframe" 
-        src="https://my-site-c26k9dlb-sheethappenswithja.wix-vibe.com" 
-        allowfullscreen>
-      </iframe>
+      <iframe
+  class="main-iframe"
+  src="https://my-site-c26k9dlb-sheethappenswithja.wix-vibe.com"
+  allow="fullscreen; autoplay; encrypted-media; picture-in-picture"
+  loading="eager"
+  referrerpolicy="no-referrer-when-downgrade"
+  allowfullscreen>
+</iframe>
 
       <div class="fixed-rectangle">
         © 2025 PROJECT ITF
@@ -97,3 +103,4 @@
     </div>
   </body>
 </html>
+
